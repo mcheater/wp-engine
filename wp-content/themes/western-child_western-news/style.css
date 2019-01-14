@@ -1,0 +1,63 @@
+/******************************************************************
+Theme Name: Western Child - Western News
+Theme URI: http://www.themble.com/bones
+Description: Western News theme based off the Western wordpress theme.
+Author: Travis Neilans
+Author URI: http://airhorndesign.com
+Template: western
+Version: 1.3
+Tags: flexible-width, translation-ready, microformats, rtl-language-support
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+*/
+ 
+/******************************************************************
+******************************************************************/
+
+/*----- Genral Classes start ------*/
+.a2a_kit #ata-list{
+	padding-left: 0;
+	list-style: none;
+	margin:0px;
+}
+.a2a_kit #ata-list li {
+	display: inline-block;
+	padding-right: 1px;
+	margin: 0px 0px 10px 0px;
+	list-style: none;
+}
+/*---- General classes end -------*/
+
+/*Change icons size here*/
+.social-icons .fa {
+	font-size: 1.4em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFF;
+}
+.social-icons.icon-circle .fa{ 
+	border-radius: 50%;
+}
+.social-icons.icon-rounded .fa{
+	border-radius:5px;
+}
+.social-icons.icon-flat .fa{
+	border-radius: 0;
+}
+ 
+.social-icons .fa-facebook{background-color:#3C599F;}  
+.social-icons .fa-google-plus{background-color:#CF3D2E;} 
+.social-icons .fa-linkedin{background-color:#0085AE;} 
+.social-icons .fa-twitter{background-color:#32CCFE;} 
+.social-icons .fa-plus{background-color:#0166ff;}
+
+.g-recaptcha {
+	padding-bottom: 1em;
+}

@@ -1,0 +1,225 @@
+/******************************************************************
+Theme Name: Western Child - Media Relations
+Theme URI: http://www.themble.com/bones
+Description: Media Relations theme based off the Western wordpress theme.
+Author: Travis Neilans
+Author URI: http://airhorndesign.com
+Template: western
+Version: 1.3.1
+Tags: flexible-width, translation-ready, microformats, rtl-language-support
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+*/
+ 
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+#sidebar1 div.widget:first-child {
+	margin-top: 0 !important;
+}
+
+
+.releaselist .row-wrapper {
+	border-bottom: 1px solid #AAA;
+	margin-bottom: 1em;
+}
+
+.releaselist .sixcolgrid {
+	width: 46%;
+	margin-left:1.5%;
+	margin-right:1.5%;
+	float: left;
+}
+.releaselist .sixcolgrid h3 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	line-height: 1.2em; 
+}
+.releaselist .sixcolgrid span {
+	padding-bottom: 10px;
+	display: block;
+}
+.releaselist .sixcolgrid.verticalImg img.wp-post-image  {
+	max-width: 25%;
+	float: left;
+	margin-right: 1em;
+}
+.releaselist .sixcolgrid.horizontalImg img.wp-post-image  {
+	max-width: 40%;
+	float: right;
+	margin-left: 1em;
+}
+.releaselist .sixcolgrid.squareImg img.wp-post-image  {
+	max-width: 30%;
+	float: left;
+	margin-right: 1em;
+}
+.releaselist .sixcolgrid.customSizelargeImg img.wp-post-image {
+	max-width: 100%;
+	float: none;
+	margin: 0;
+}
+.releaselist .sixcolgrid img.wp-post-image {
+	margin-top: 10px;
+}
+.releaselist .sixcolgrid.customSizedouble {
+	border-top: 1px solid #AAA;
+	width: 97%;
+}
+.releaselist .sixcolgrid.customSizedouble img.wp-post-image {
+	max-width: 48.5%;
+}
+.releaselist .sixcolgrid.customSizedouble.verticalImg img.wp-post-image {
+	max-width: 25%;
+}
+@media only screen and (max-width: 480px) {
+	.releaselist .sixcolgrid {
+		width: 97%;
+	}
+	
+}
+.mediaarchive.news-tips, .releaselist .sixcolgrid.news-tips {
+	background-color: #efefef;
+}
+.releaselist .sixcolgrid.news-tips {
+	padding: 0 10px;
+}
+.feature-mini.mediaarchive {
+	position: relative;
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+	padding: 10px 10px 0;
+}
+.title-bar-grey {
+    background: #eee;
+    padding: 7px 0 7px 10px;
+    border-bottom: 1px #bbb solid;
+    text-transform: uppercase;
+}
+.feature div {
+    line-height: normal;
+}
+
+.feature {
+    margin: 0 auto 10px !important;
+    max-width: 700px;
+}
+.feature-image {
+	margin-right: 4%;
+	margin-top: 0;
+}
+.feature img {
+    height: 300px;
+    width: 100%;
+}
+.feature .flex-control-nav {
+	text-align: center;
+	position: static;
+}
+.feature .flex-direction-nav  {
+    /*display:none;*/
+}
+.flex-caption {
+    padding: 5px 10px;
+}
+.flex-caption + .flex-caption span {
+	padding-top: 0;
+}
+
+.feature-mini.mediaarchive .home-thumb {
+	width: 220px;
+	float: right;
+	margin-left: 10px;
+	position: relative;
+}
+.feature-mini.mediaarchive .home-thumb .category-overlay {
+	width: 220px;
+}
+.feature-mini.mediaarchive .home-thumb .category-overlay.thumbfalse {
+	display: none;
+}
+.feature-mini p {
+	color: #555;
+}
+.multimedia-image .image-caption {
+	padding-bottom: 1em;
+}
+.widget_archives_widget {
+	background: none !important;
+	border: none !important;
+	padding: 0;
+}
+.widget_archives_widget .widgettitle {
+	margin-left: 0;
+	margin-right: 0;
+}
+.posts_accordion { width: 100%; padding-bottom: 0px; }
+.posts_accordion h3 { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; padding: 5px; border: 1px solid; margin-bottom: 0; }
+.posts_accordion .posts_accordion-li-fix { display: inline; }
+.posts_accordion h3:hover { border-bottom-color: #f3f3f3  !important; }
+.posts_accordion h3 a { display: block; font-size: 1em; padding-left:.7em; }
+.posts_accordion .posts_accordion-content { padding: 1em 1em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; background: #f3f3f3; border: 1px solid #4E2583; border-top:none;}
+.posts_accordion h3:hover + .posts_accordion-content, .posts_accordion .posts_accordion-content:hover { display: block; }
+.posts_accordion .posts_accordion-content a {color: #015b86;text-decoration: none;}
+.posts_accordion .posts_accordion-content a:hover { color:#029feb; }
+
+/*----- Genral Classes start ------*/
+.a2a_kit #ata-list{
+	padding-left: 0;
+	list-style: none;
+	margin:0px;
+}
+.a2a_kit #ata-list li {
+	display: inline-block;
+	padding-right: 1px;
+	margin: 0px 0px 10px 0px;
+	list-style: none;
+}
+/*---- General classes end -------*/
+
+/*Change icons size here*/
+.social-icons .fa {
+	font-size: 1.4em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFF;
+}
+.social-icons.icon-circle .fa{ 
+	border-radius: 50%;
+}
+.social-icons.icon-rounded .fa{
+	border-radius:5px;
+}
+.social-icons.icon-flat .fa{
+	border-radius: 0;
+}
+ 
+.social-icons .fa-facebook{background-color:#3C599F;}  
+.social-icons .fa-google-plus{background-color:#CF3D2E;} 
+.social-icons .fa-linkedin{background-color:#0085AE;} 
+.social-icons .fa-twitter{background-color:#32CCFE;} 
+.social-icons .fa-plus{background-color:#0166ff;}
+
+
+@media only screen and (max-width: 768px) {
+	.feature img {
+        height: 250px;
+    }
+    .feature-image {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+    .feature img {
+        height: 200px;
+    }
+}

@@ -1,0 +1,24 @@
+
+# BEGIN WordPress
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# uploaded files
+RewriteRule ^files/(.+) wp-includes/ms-files.php?file=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule . index.php [L]
+
+# END WordPress
+php_value memory_limit 768M
+php_value max_input_vars 10000
+
+Redirect 301 /2001/02/update/ /long-form-demo/index.html
+Redirect 301 /2018/09/study-shows-wellness-app-loyalty-points-fuel-physical-activity/ https://mediarelations.uwo.ca/2018/09/20/study-shows-wellness-app-loyalty-points-fuel-physical-activity/
+Redirect 301 /2018/10/10/western-close-university-drive-bridge-october-18/ https://news.westernu.ca/2018/10/university-drive-bridge-set-close/
+Redirect 301 /2018/10/7-million-gift-establish-john-f-wood-centre-ivey/ https://www.ivey.uwo.ca/news/news-ivey/2018/10/7-million-gift-creates-john-f-wood-centre-for-innovation-in-business-learning/
+Redirect 301 /2018/10/ivey-opens-robert-stuebing-recruiting-centre-following-1-million-gift/ https://www.ivey.uwo.ca/alumni/stay-connected/online-resources/news/2018/2/ivey-opens-robert-stuebing-recruiting-centre-following-1-million-gift/
+Redirect 301 /2018/10/new-mothers-breastfeeding-pain-can-affect-infant-health/ https://mediarelations.uwo.ca/2018/10/30/severe-breastfeeding-pain-experienced-new-mothers-can-impact-infant-health/
